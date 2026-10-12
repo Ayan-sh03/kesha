@@ -7,6 +7,8 @@ var scale_f := 1.0
 var _creak := 0.0
 var _legs: Array[Node3D] = []
 var _phase := 0.0
+var _model: Node3D   # generated terracotta bull (rocked in stop-motion steps)
+const MODEL_YAW := 0.0
 
 
 func setup() -> void:
@@ -18,6 +20,10 @@ func setup() -> void:
 	knock_resist = 0.7
 	visual = Node3D.new()
 	add_child(visual)
+	if ResourceLoader.exists("res://assets/chars/bull.glb"):
+		_model = B.model(visual, "bull", Vector3.ZERO, scale_f, MODEL_YAW)
+		shard_color = Color(0.78, 0.4, 0.25)
+		return
 	var body := Node3D.new()
 	visual.add_child(body)
 	body.rotation_degrees.y = 90  # model built along -x; turn it to face +z
@@ -70,6 +76,10 @@ func think(delta: float) -> void:
 		_phase += 1.0
 		for i in _legs.size():
 			_legs[i].rotation.z = sin(_phase * 1.6 + i * PI * 0.5) * 0.5
+		if _model:
+			# a clay thing can't gallop: it lurches, one held pose per step
+			_model.position.y = absf(sin(_phase * 1.6)) * 0.12 * scale_f
+			_model.rotation.x = sin(_phase * 1.6) * 0.08
 		Fx.dust(global_position + Vector3(-facing * 0.6, 0.1, 0), 2)
 
 
