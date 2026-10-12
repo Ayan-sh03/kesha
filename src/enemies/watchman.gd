@@ -17,7 +17,9 @@ func setup() -> void:
 	damage = 0
 	hp = 999
 	speed = 1.6
-	puppet = Fig.watchman(randi() % 4)
+	var cm := CharModel.make("watchman")
+	cm.speed_mult = randf_range(0.9, 1.1)
+	puppet = cm if cm.player != null else Fig.watchman(randi() % 4)
 	add_child(puppet)
 	puppet.stepped = false
 	cone = SpotLight3D.new()
@@ -30,10 +32,19 @@ func setup() -> void:
 	cone.shadow_enabled = true
 	add_child(cone)
 	cone.position = Vector3(0, 1.5, 0)
-	B.diya(puppet.parts["r_fore"], Vector3(0, -0.32, 0.05), true, 0.0)
+	if puppet is CharModel:
+		# sockets exist after _ready: hang the lamp from the hand next frame
+		_hang_lamp.call_deferred()
+	else:
+		B.diya(puppet.parts["r_fore"], Vector3(0, -0.32, 0.05), true, 0.0)
 	if a == 0.0 and b == 0.0:
 		a = global_position.x - 4.0
 		b = global_position.x + 4.0
+
+
+func _hang_lamp() -> void:
+	if puppet.parts.has("r_fore"):
+		B.diya(puppet.parts["r_fore"], Vector3(0, -0.12, 0.04), true, 0.0)
 
 
 func think(delta: float) -> void:
@@ -43,7 +54,7 @@ func think(delta: float) -> void:
 	if wait_t > 0.0:
 		wait_t -= delta
 		velocity.x = move_toward(velocity.x, 0.0, 10.0 * delta)
-		puppet.anim("idle")
+		puppet.anim("stand_guard" if puppet is CharModel and (puppet as CharModel).has_clip("stand_guard") else "idle")
 	else:
 		var tx := b if facing > 0 else a
 		move_toward_x(tx, speed, delta)
