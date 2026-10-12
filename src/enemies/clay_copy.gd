@@ -9,7 +9,8 @@ func setup() -> void:
 	hp = 2
 	speed = 3.4
 	damage = 1
-	puppet = Fig.tesu()
+	var cm := CharModel.make("tesu", {"stepped": true, "step_fps": 8.0})
+	puppet = cm if cm.player != null else Fig.tesu()
 	puppet.set_material_all(Fig.clay_mat(Color(0.65, 0.5, 0.42), "raw"))
 	puppet.stepped = true
 	puppet.step_fps = 8.0
