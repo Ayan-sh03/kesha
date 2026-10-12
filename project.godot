@@ -1,0 +1,74 @@
+; Engine configuration file.
+; Dwaar - panchdwar, the five doors.
+
+config_version=5
+
+[application]
+
+config/name="Dwaar"
+config/description="Five doors. One veil. A village that gave away a girl."
+run/main_scene="res://src/core/main.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/bg_color=Color(0.03, 0.025, 0.04, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*res://src/autoload/game.gd"
+Snd="*res://src/autoload/audio.gd"
+Fx="*res://src/autoload/fx.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+3d_physics/layer_3="enemy"
+3d_physics/layer_4="player_attack"
+3d_physics/layer_5="enemy_attack"
+3d_physics/layer_6="trigger"
+3d_physics/layer_7="hazard"
+3d_physics/layer_8="climb"
+
+[physics]
+
+common/physics_ticks_per_second=120
+common/max_physics_steps_per_frame=12
+3d/default_gravity=30.0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=1
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_debanding=true
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=3
+environment/volumetric_fog/volume_size=96
+environment/volumetric_fog/volume_depth=96
+environment/volumetric_fog/use_filter=1
+environment/defaults/default_clear_color=Color(0.02, 0.02, 0.03, 1)
+
+[debug]
+
+gdscript/warnings/inference_on_variant=0
+gdscript/warnings/unused_parameter=0
+gdscript/warnings/unused_variable=0
+gdscript/warnings/integer_division=0
+gdscript/warnings/narrowing_conversion=0
+gdscript/warnings/return_value_discarded=0
+gdscript/warnings/unused_signal=0
+gdscript/warnings/standalone_ternary=0
+gdscript/warnings/confusable_local_declaration=0
