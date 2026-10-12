@@ -6,7 +6,8 @@ var a := 0.0
 var b := 0.0
 var listen_t := 0.0
 var rush_t := 0.0
-var pot: MeshInstance3D
+var pot: Node3D
+var ring_amp := 0.25
 var attack_cd := 0.0
 
 
@@ -14,11 +15,20 @@ func setup() -> void:
 	hp = 3
 	speed = 1.2
 	damage = 1
-	puppet = Fig.clay_person(1.75, Color(0.55, 0.42, 0.35), "silt", true)
-	add_child(puppet)
-	var head: Node3D = puppet.parts["head"]
-	head.get_node("skull").visible = false
-	pot = B.pot(head, Vector3(0, -0.02, 0), "matka", 0.85, B.mat("terracotta", 2.0))
+	var cm := CharModel.make("pothead", {"stepped": true, "step_fps": 8.0})
+	cm.speed_mult = randf_range(0.9, 1.1)
+	if cm.player != null:
+		# the generated model already wears its pot: the whole body rings instead
+		puppet = cm
+		add_child(puppet)
+		pot = cm.body
+		ring_amp = 0.07
+	else:
+		puppet = Fig.clay_person(1.75, Color(0.55, 0.42, 0.35), "silt", true)
+		add_child(puppet)
+		var head: Node3D = puppet.parts["head"]
+		head.get_node("skull").visible = false
+		pot = B.pot(head, Vector3(0, -0.02, 0), "matka", 0.85, B.mat("terracotta", 2.0))
 	shard_color = Color(0.55, 0.42, 0.35)
 	if a == 0.0 and b == 0.0:
 		a = global_position.x - 3.0
@@ -30,7 +40,7 @@ func heard(pos: Vector3) -> void:
 	listen_t = 0.4
 	rush_t = 4.0
 	# the pot rings with every sound in the room
-	pot.rotation.z = 0.25
+	pot.rotation.z = ring_amp
 	create_tween().tween_property(pot, "rotation:z", 0.0, 0.5).set_trans(Tween.TRANS_ELASTIC)
 
 

@@ -61,7 +61,7 @@ The source of truth is the concept bible (Dwaar Codex v0.2): five doors, the Vei
    - The boat model is scaled too big (`B.model(boat,"boat",…,3.0)`); try about 1.6.
    - The moon in the far panorama is large.
    - Then play the giving cutscene end to end with `--auto_x=1` and check every beat.
-2. **Swap enemy visuals to `CharModel`** (watchman, thirsty, kachcha, gaanth done, see `docs/screens/enemies_3d.jpg`; all fall back to `Fig` if the GLB is missing; not yet seen on screen):
+2. **Swap enemy visuals to `CharModel`** (watchman, thirsty, kachcha, gaanth, pothead done, see `docs/screens/enemies_3d.jpg` and `pothead_3d.jpg`; all fall back to `Fig` if the GLB is missing; not yet seen on screen):
    - watchman → `"watchman"`, thirsty → `"thirsty"` (crawl clip), kachcha → `"kachcha"` (stepped), pot_head → `"pothead"` (stepped), stoker → `"stoker"` (carry clip), gaanth → `"gaanth"` (stepped).
    - glazed_double's copy → `CharModel.make("tesu")` with the glaze material; clay_copy → tesu with a clay material, stepped.
    - clay_bull → `B.model("bull")` with stop-motion transforms; silt_swimmer → `B.model("swimmer")`.
