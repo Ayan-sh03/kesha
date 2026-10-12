@@ -14,7 +14,12 @@ func setup() -> void:
 	damage = 0
 	radius = 0.35
 	height = 0.8
-	puppet = Fig.human({"name": "Thirsty", "height": 1.6, "clay": Fig.clay_mat(Color(0.7, 0.64, 0.56), "silt"), "head": "bald", "thin": 0.65, "stepped": true})
+	var cm := CharModel.make("thirsty", {"stepped": true, "step_fps": 7.0})
+	cm.speed_mult = randf_range(0.85, 1.15)
+	if cm.player != null:
+		puppet = cm
+	else:
+		puppet = Fig.human({"name": "Thirsty", "height": 1.6, "clay": Fig.clay_mat(Color(0.7, 0.64, 0.56), "silt"), "head": "bald", "thin": 0.65, "stepped": true})
 	add_child(puppet)
 	puppet.step_fps = 7.0
 	shard_color = Color(0.62, 0.56, 0.48)
