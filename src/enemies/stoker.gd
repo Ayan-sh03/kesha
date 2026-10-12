@@ -13,13 +13,23 @@ func setup() -> void:
 	hp = 3
 	speed = 1.5
 	damage = 1
-	puppet = Fig.human({"name": "Stoker", "height": 1.85, "clay": Fig.clay_mat(Color(0.3, 0.22, 0.18), "terracotta"), "head": "bald", "faceless": true, "stepped": true, "bulk": 1.2})
-	add_child(puppet)
-	puppet.anim("carry")
-	var head: Node3D = puppet.parts["head"]
-	var basket := B.add_mesh(head, B.cyl(0.32, 0.22, 0.22, 14), B.mat("rope", 3.0), Vector3(0, 0.36, 0))
-	basket.name = "basket"
-	B.flame(head, Vector3(0, 0.5, 0), 2.2, true, 1.6)
+	var cm := CharModel.make("stoker", {"stepped": true, "step_fps": 8.0})
+	cm.speed_mult = randf_range(0.9, 1.1)
+	if cm.player != null:
+		# the generated model already carries its basket: only light it
+		puppet = cm
+		add_child(puppet)
+		puppet.anim("carry")
+		if puppet.parts.has("head"):
+			B.flame(puppet.parts["head"], Vector3(0, 0.42, 0), 2.2, true, 1.6)
+	else:
+		puppet = Fig.human({"name": "Stoker", "height": 1.85, "clay": Fig.clay_mat(Color(0.3, 0.22, 0.18), "terracotta"), "head": "bald", "faceless": true, "stepped": true, "bulk": 1.2})
+		add_child(puppet)
+		puppet.anim("carry")
+		var head: Node3D = puppet.parts["head"]
+		var basket := B.add_mesh(head, B.cyl(0.32, 0.22, 0.22, 14), B.mat("rope", 3.0), Vector3(0, 0.36, 0))
+		basket.name = "basket"
+		B.flame(head, Vector3(0, 0.5, 0), 2.2, true, 1.6)
 	shard_color = Color(0.3, 0.22, 0.18)
 	if a == 0.0 and b == 0.0:
 		a = global_position.x - 4.0
