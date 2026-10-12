@@ -261,6 +261,11 @@ func start_region(i: int, mode: String = "enter") -> void:
 	_clear_ui()
 	await get_tree().process_frame
 	var info: Dictionary = Game.REGIONS[i]
+	if not ResourceLoader.exists(info["script"]):
+		# region not built yet in this work-in-progress build
+		busy = false
+		_to_be_continued(info)
+		return
 	var r: Region = load(info["script"]).new()
 	r.info = info
 	r.index = i
@@ -608,6 +613,34 @@ func _close_pause() -> void:
 	if _pause and is_instance_valid(_pause):
 		_pause.queue_free()
 	_pause = null
+
+
+func _to_be_continued(info: Dictionary) -> void:
+	state = "ending"
+	_clear_ui()
+	if player:
+		player.visible = false
+		player.frozen = true
+	var root := Control.new()
+	root.set_anchors_preset(Control.PRESET_FULL_RECT)
+	ui.add_child(root)
+	var bg := ColorRect.new()
+	bg.color = Color(0.015, 0.012, 0.02, 1.0)
+	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	root.add_child(bg)
+	var v := VBoxContainer.new()
+	v.anchor_left = 0.2
+	v.anchor_right = 0.8
+	v.anchor_top = 0.3
+	v.anchor_bottom = 0.8
+	v.alignment = BoxContainer.ALIGNMENT_CENTER
+	root.add_child(v)
+	v.add_child(Menus.label("%s · %s" % [info.get("num", ""), info.get("name", "")], 70, Color(0.92, 0.6, 0.38)))
+	v.add_child(Menus.label("Not yet built. The descent continues in a later build.", 32, Color(0.85, 0.82, 0.76), Hud.font_italic()))
+	var b := Menus.button("Back to the field", 34, show_title)
+	v.add_child(b)
+	b.call_deferred("grab_focus")
+	post.fade_to(0.0, 1.0)
 
 
 # ------------------------------------------------------------- endings
