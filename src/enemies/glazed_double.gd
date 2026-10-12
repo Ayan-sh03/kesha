@@ -29,7 +29,8 @@ func setup() -> void:
 	visual.add_child(l)
 	l.position = Vector3(0, 0.6, 0.5)
 	shard_color = Color(0.2, 0.55, 0.6)
-	copy = Fig.tesu()
+	var cm := CharModel.make("tesu", {"stepped": true, "step_fps": 12.0})
+	copy = cm if cm.player != null else Fig.tesu()
 	copy.set_material_all(B.mat("glaze"))
 	copy.stepped = true
 	copy.step_fps = 12.0
