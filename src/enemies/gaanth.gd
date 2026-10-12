@@ -14,11 +14,17 @@ func setup() -> void:
 	speed = 1.8
 	damage = 0
 	clay = false
-	puppet = Fig.human({"name": "Gaanth", "height": 1.9, "clay": Fig.clay_mat(Color(0.75, 0.62, 0.42), "terracotta"), "head": "bald", "faceless": true, "thin": 0.7, "stepped": true})
-	puppet.set_material_all(B.mat("rope", 4.0))
-	add_child(puppet)
-	# knots all over it
-	for i in 9:
+	var cm := CharModel.make("gaanth", {"stepped": true, "step_fps": 8.0})
+	cm.speed_mult = randf_range(0.9, 1.1)
+	if cm.player != null:
+		puppet = cm
+		add_child(puppet)
+	else:
+		puppet = Fig.human({"name": "Gaanth", "height": 1.9, "clay": Fig.clay_mat(Color(0.75, 0.62, 0.42), "terracotta"), "head": "bald", "faceless": true, "thin": 0.7, "stepped": true})
+		puppet.set_material_all(B.mat("rope", 4.0))
+		add_child(puppet)
+	# knots all over it (the generated model is already knotted)
+	for i in (0 if puppet is CharModel else 9):
 		B.add_mesh(puppet.parts["chest"], B.sphere(0.06, -1, 8), B.mat("rope", 5.0), Vector3(randf_range(-0.15, 0.15), randf_range(0.0, 0.4), 0.12))
 	shard_color = Color(0.7, 0.6, 0.4)
 	hit_sound = "knot_untie"

@@ -12,11 +12,17 @@ func setup() -> void:
 	speed = 1.3
 	damage = 0
 	knock_resist = 0.5
-	puppet = Fig.clay_person(1.7, Color(0.75, 0.68, 0.62), "raw", true)
-	puppet.step_fps = 6.0
-	add_child(puppet)
-	# lumps of unfired clay
-	for i in 7:
+	var cm := CharModel.make("kachcha", {"stepped": true, "step_fps": 6.0})
+	cm.speed_mult = randf_range(0.85, 1.1)
+	if cm.player != null:
+		puppet = cm
+		add_child(puppet)
+	else:
+		puppet = Fig.clay_person(1.7, Color(0.75, 0.68, 0.62), "raw", true)
+		puppet.step_fps = 6.0
+		add_child(puppet)
+	# lumps of unfired clay (the generated model is already lumpy)
+	for i in (0 if puppet is CharModel else 7):
 		B.add_mesh(puppet.parts["chest"], B.sphere(randf_range(0.07, 0.14), -1, 8), B.mat("clay_raw"), Vector3(randf_range(-0.2, 0.2), randf_range(0.0, 0.5), randf_range(-0.1, 0.12)))
 	shard_color = Color(0.36, 0.25, 0.18)
 
