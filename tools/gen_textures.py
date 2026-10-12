@@ -163,11 +163,11 @@ def limewash():
     n = N
     big = fnoise(n, 3.4, 31)
     mid = fnoise(n, 2.4, 32)
-    flake = np.clip((fnoise(n, 2.8, 33) - 0.62) * 6, 0, 1)
+    flake = np.clip((fnoise(n, 2.2, 33) - 0.7) * 5, 0, 1) * np.clip((band(n, 40, 160, 35) - 0.3) * 3, 0, 1)
     drip = fnoise(n, 2.0, 34, aniso=(8.0, 0.4))
     base = mix_cols(big * 0.5 + mid * 0.5, col("#bfc4c6"), col("#ecebe3"))
     base = lerp(base, col("#9aa7b5")[None, None, :], (drip > 0.7)[..., None] * 0.18)
-    base = lerp(base, col("#a8573a")[None, None, :], flake[..., None] * 0.85)
+    base = lerp(base, col("#8e6a52")[None, None, :], flake[..., None] * 0.75)
     h = mid * 0.2 + (1 - flake) * 0.3
     rough = 0.88 + 0.1 * mid
     save_set("limewash", base, h, rough, 3.0)
@@ -456,5 +456,10 @@ def soft_particle():
 
 
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1:
+        for f in sys.argv[1:]:
+            globals()[f]()
+        raise SystemExit
     terracotta(); silt(); limewash(); brick(); soot(); wetclay(); rope(); indigo()
     ochre_cloth(); skin(); glaze(); chalk_marks(); handprint(); soft_particle()

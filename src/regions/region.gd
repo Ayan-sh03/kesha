@@ -174,7 +174,7 @@ func block(x0: float, x1: float, y0: float, y1: float, m: Variant = "silt", z0: 
 	return B.static_box(self, c, s, mt)
 
 
-func ground(x0: float, x1: float, y: float, m: Variant = "silt", thick: float = 8.0, z0: float = -4.0, z1: float = 3.0) -> StaticBody3D:
+func ground(x0: float, x1: float, y: float, m: Variant = "silt", thick: float = 8.0, z0: float = -4.0, z1: float = 6.5) -> StaticBody3D:
 	return block(x0, x1, y - thick, y, m, z0, z1)
 
 
