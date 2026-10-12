@@ -118,7 +118,7 @@ func _village_top() -> void:
 	var houses := ["house1.png", "house2.png"]
 	for i in 7:
 		var x := -44.0 + i * 6.2
-		_paint(houses[i % 2], Vector3(x, 12.0, -10.0 - (i % 3) * 2.5), r.randf_range(5.2, 6.4), {"mirror": float(i % 3 == 1), "keep_lights": 1.0, "grade": Color(0.3, 0.33, 0.52), "desat": 0.3})
+		_paint(houses[i % 2], Vector3(x, 12.0, -10.0 - (i % 3) * 2.5), r.randf_range(5.2, 6.4), {"mirror": float(i % 3 == 1), "keep_lights": 1.0, "grade": Color(0.2, 0.23, 0.38), "desat": 0.35})
 	for i in 3:
 		_paint("kiln.png", Vector3(-40.0 + i * 15.0, 12.0, -18.0), 6.5, {"mirror": float(i % 2), "grade": Color(0.32, 0.34, 0.5)})
 	_paint("pots.png", Vector3(-30, 12.0, -5.5), 2.4)
@@ -161,7 +161,7 @@ func _crowd() -> void:
 		var z := r.randf_range(-3.6, -1.4) if r.randf() < 0.7 else r.randf_range(1.4, 2.6)
 		_villager(Vector3(x, step_y(x), z), i, "band" if r.randf() < 0.55 else "pray_palms")
 		if i % 4 == 0:
-			B.lamp_light(self, Vector3(x, step_y(x) + 1.3, z + 0.6), Color(1.0, 0.6, 0.3), 1.0, 5.5)
+			B.lamp_light(self, Vector3(x, step_y(x) + 1.3, z + 0.6), Color(1.0, 0.6, 0.3), 0.55, 4.5)
 	# a lamp on every step
 	for i in 24:
 		var x := i * 1.5 + 0.75
@@ -184,7 +184,7 @@ func _riverbed() -> void:
 	boat = Node3D.new()
 	add_child(boat)
 	boat.position = Vector3(bx, 0, -1.6)
-	var hull := B.model(boat, "boat", Vector3.ZERO, 3.0, PI * 0.5)
+	var hull := B.model(boat, "boat", Vector3.ZERO, 1.6, PI * 0.5)
 	hull.name = "hull"
 	bindu = CharModel.make("bindu")
 	boat.add_child(bindu)
@@ -212,7 +212,7 @@ func _riverbed() -> void:
 	for i in 10:
 		B.model(self, ["matka", "surahi"][i % 2], Vector3(38.0 + i * 7.3, 0, -6.0 - (i % 3) * 3.0), 1.0, i * 0.7)
 	for i in 4:
-		B.model(self, "boat", Vector3(76.0 + i * 11.0, 0.05, -8.0 - i * 2.5), 3.2, 0.4 + i).rotation.z = 0.25
+		B.model(self, "boat", Vector3(76.0 + i * 11.0, 0.05, -8.0 - i * 2.5), 1.8, 0.4 + i).rotation.z = 0.25
 
 
 func _foreground() -> void:

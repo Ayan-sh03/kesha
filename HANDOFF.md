@@ -55,7 +55,7 @@ The source of truth is the concept bible (Dwaar Codex v0.2): five doors, the Vei
 
 ## Next steps, in order
 
-1. **Polish Dry Ghat** (`src/regions/r01_dry_ghat.gd`):
+1. **Polish Dry Ghat** (done: darker houses, dimmer lamps on the near villagers, boats at 1.6–1.8 scale; still needs a visual check) (`src/regions/r01_dry_ghat.gd`):
    - Painted houses still read too blue/white. Lower the `grade`, or regenerate them as night paintings.
    - The near villagers are over-lit by lamps.
    - The boat model is scaled too big (`B.model(boat,"boat",…,3.0)`); try about 1.6.
