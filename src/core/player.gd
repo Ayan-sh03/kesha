@@ -79,11 +79,12 @@ func _ready() -> void:
 	cs.shape = cap
 	cs.position = Vector3(0, 0.625, 0)
 	add_child(cs)
-	puppet = Fig.tesu()
+	puppet = CharModel.make("tesu")
 	add_child(puppet)
 	puppet.rotation_degrees.y = 80
 	for mi in puppet.meshes:
 		mi.layers = 2
+	_build_props()
 	_build_lamp()
 	_build_hitbox()
 	_build_sensor()
@@ -93,9 +94,53 @@ func _ready() -> void:
 	_on_doors()
 
 
+func _build_props() -> void:
+	## Baba's pot-paddle in the right hand, the paddle on his back when idle,
+	## the clay lamp in the left hand, the door patches on his face.
+	var wood := B.mat("wood")
+	var rh: Node3D = puppet.parts.get("r_fore")
+	if rh:
+		var paddle := Node3D.new()
+		paddle.name = "paddle"
+		rh.add_child(paddle)
+		paddle.position = Vector3(0, 0.06, 0.02)
+		B.add_mesh(paddle, B.cyl(0.016, 0.018, 0.26, 8), wood, Vector3(0, 0.08, 0))
+		B.add_mesh(paddle, B.mesh_box(Vector3(0.17, 0.28, 0.028)), wood, Vector3(0, 0.34, 0))
+		paddle.visible = false
+	var ch: Node3D = puppet.parts.get("chest")
+	if ch:
+		var pb := Node3D.new()
+		pb.name = "paddle_back"
+		ch.add_child(pb)
+		pb.position = Vector3(0, 0.05, -0.14)
+		pb.rotation_degrees = Vector3(0, 0, 30)
+		B.add_mesh(pb, B.mesh_box(Vector3(0.16, 0.26, 0.026)), wood, Vector3(0, 0.14, 0))
+		B.add_mesh(pb, B.cyl(0.016, 0.016, 0.26, 6), wood, Vector3(0, -0.12, 0))
+	var lh: Node3D = puppet.parts.get("l_fore")
+	if lh:
+		var hold := Node3D.new()
+		hold.name = "lamp_hold"
+		lh.add_child(hold)
+		hold.position = Vector3(0, 0.09, 0.03)
+	var hd: Node3D = puppet.parts.get("head")
+	if hd:
+		var ind := B.tint("indigo", Color(0.9, 0.9, 1.0), 6.0)
+		var eye := Node3D.new()
+		eye.name = "patch_eye"
+		hd.add_child(eye)
+		B.add_mesh(eye, B.cyl(0.105, 0.105, 0.018, 18), ind, Vector3(0, 0.1, 0.0), Vector3(-0.2, 0, 0))
+		B.add_mesh(eye, B.sphere(0.034, -1, 10), ind, Vector3(0.035, 0.1, 0.085), Vector3.ZERO, Vector3(1, 1, 0.45))
+		var ear := B.add_mesh(hd, B.sphere(0.04, -1, 8), ind, Vector3(0.095, 0.085, 0.0), Vector3.ZERO, Vector3(0.6, 1.2, 1.0))
+		ear.name = "patch_ear"
+		var mouth := B.add_mesh(hd, B.cyl(0.1, 0.1, 0.045, 16), ind, Vector3(0, 0.02, 0.0), Vector3(-0.25, 0, 0), Vector3(1, 1, 1.06))
+		mouth.name = "patch_mouth"
+		var nose := B.add_mesh(hd, B.sphere(0.028, -1, 8), ind, Vector3(0, 0.06, 0.1))
+		nose.name = "patch_nose"
+
+
 func _build_lamp() -> void:
-	var hold: Node3D = puppet.parts["l_fore"].get_node("lamp_hold")
-	lamp_node = B.diya(hold, Vector3.ZERO, true, 0.0)
+	var holder: Node3D = puppet.parts["l_fore"].get_node("lamp_hold") if puppet.parts.has("l_fore") else self
+	lamp_node = B.diya(holder, Vector3.ZERO, true, 0.0)
 	lamp_node.scale = Vector3.ONE * 1.2
 	lamp_light = OmniLight3D.new()
 	lamp_light.light_color = Color(1.0, 0.64, 0.32)
@@ -159,7 +204,16 @@ func _build_aim_line() -> void:
 
 
 func _on_doors() -> void:
-	Fig.update_tesu_doors(puppet)
+	var hd: Node3D = puppet.parts.get("head")
+	if hd == null:
+		return
+	for d in ["eye", "ear", "mouth", "nose"]:
+		var n := hd.get_node_or_null("patch_" + d)
+		if n:
+			n.visible = not Game.has(d)
+	# fired skin: his skin hardens like a pot in the kiln
+	if puppet is CharModel:
+		(puppet as CharModel).tint_all(Color(1.25, 0.72, 0.55) if not Game.has("skin") else Color(1, 1, 1))
 
 
 # ------------------------------------------------------------- areas
@@ -315,8 +369,11 @@ func _move(delta: float) -> void:
 		puppet.anim("sneak" if sneaking else ("run" if abs(velocity.x) > 3.5 else "walk"), abs(velocity.x) / RUN)
 	else:
 		puppet.anim("idle")
-	puppet.parts["r_fore"].get_node("paddle").visible = state == "attack" or block_t >= 0.0
-	puppet.parts["chest"].get_node("paddle_back").visible = not puppet.parts["r_fore"].get_node("paddle").visible
+	var pd: Node3D = puppet.parts["r_fore"].get_node_or_null("paddle") if puppet.parts.has("r_fore") else null
+	var pbk: Node3D = puppet.parts["chest"].get_node_or_null("paddle_back") if puppet.parts.has("chest") else null
+	if pd and pbk:
+		pd.visible = state == "attack" or block_t >= 0.0
+		pbk.visible = not pd.visible
 
 
 func _climb(delta: float) -> void:
@@ -379,7 +436,7 @@ func _combat(delta: float) -> void:
 	# paddle
 	if state == "attack":
 		attack_t += delta
-		if attack_t > 0.05 and attack_t < 0.2:
+		if attack_t > 0.1 and attack_t < 0.3:
 			_do_hits()
 		if _pressed("attack"):
 			attack_queued = true

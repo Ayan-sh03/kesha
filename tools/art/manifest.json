@@ -1,0 +1,296 @@
+{
+ "assets/art/chars/src/baba_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a lean wiry Indian village potter in his forties with a gentle tired grieving face, thin build, bare chest, a plain white dhoti, a red thread on his wrist, forearms and hands stained with dried grey clay, short greying stubble, a smear of grey clay sealing his lips, barefoot, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/bindu_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a thin 12-year-old Indian village girl with dark brown skin and one long braid, wearing a dark red cotton skirt and blouse with a mustard border, grey river clay smeared over her eyes and lips, barefoot, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/chars/src/boat_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a small shallow boat made of red terracotta clay, smooth hand-shaped hull, empty, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/bull_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a large terracotta votive bull figurine with a big hump, short horns and a dewlap, red fired clay with white slip painted bands and a clay garland, cracked, standing, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/buried_gang_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horrific wide low heap of a dozen clay-covered human bodies fused together into one crawling mass, many heads, many reaching arms, woven baskets and short hoes stuck in the mud, all one sculpture of wet grey clay, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 111
+ },
+ "assets/art/chars/src/diya_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a small traditional Indian clay oil lamp diya with a pinched spout, red earthenware, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/doorframe_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a lone weathered terracotta and brick doorframe standing by itself, two thick posts and a lintel, faded handprints, no door, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 109
+ },
+ "assets/art/chars/src/elder_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a stern old Indian village elder, white kurta and white dhoti, a large white turban, a long white beard, wooden-free prayer beads, barefoot, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/chars/src/fire_tender_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a huge faceless kiln-stoker giant of black soot-stained fired clay with glowing orange cracks, broad shoulders, holding a very long iron fire rake in both hands, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 111
+ },
+ "assets/art/chars/src/first_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "an ancient giant terracotta votive statue of a small child, crude folk-art fired red clay, round belly, cracked and chipped all over, hollow dark eye holes, white slip dots, arms at its sides, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/chars/src/gaanth_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horror game creature: a humanoid made entirely of knotted jute rope and cords, faceless, covered in hundreds of tight knots, frayed ends, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 106
+ },
+ "assets/art/chars/src/gaara_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "an enormous ancient old potter god, half-blind with one milky clouded eye, long matted grey hair and beard, skin crusted with cracked dry pale clay slip, bare chest, a loincloth, huge clay-caked hands, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/chars/src/glazed_pot_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a round glossy turquoise glazed clay pot with fine white crackle glaze and a narrow neck, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 110
+ },
+ "assets/art/chars/src/kachcha_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horror game creature: an unfired raw-clay humanoid, wet glossy grey-brown mud body, lumpy unfinished sculpted features covered in fingerprints and tool marks, faceless, dripping, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 107
+ },
+ "assets/art/chars/src/kaki_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a frail old blind Indian village woman potter, wearing a faded grey cotton sari with its end over her head, an indigo cloth band tied over her eyes, silver bangles, barefoot, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/kiln_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a traditional Indian potter's dome kiln of clay and brick with an arched firing mouth, soot-blackened, cracked, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/knot_keeper_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a tall gaunt horror figure, more rope than man, wrapped in thousands of knotted counting cords hanging to the floor, long cord fingers, a knotted faceless head, a shawl woven of cords, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 111
+ },
+ "assets/art/chars/src/matka_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a traditional round Indian red clay water pot matka with a short neck and white slip bands, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/chars/src/mother_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a tall ghostly woman entirely covered from head to the ground by a long indigo dabu resist-printed cotton veil with white dot flower patterns, no face or skin visible, only the shape of a face pressing through the cloth, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 106
+ },
+ "assets/art/chars/src/pothead_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horror game creature: a thin humanoid figure of cracked grey river silt whose head is a large round red terracotta water pot with no face, ragged white cloth, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 107
+ },
+ "assets/art/chars/src/stoker_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horror game creature: a tall faceless fire-tender of soot-black fired clay with a smooth blank head, glowing ember cracks, carrying a woven basket of burning dung cakes on its head with both raised hands, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 106
+ },
+ "assets/art/chars/src/surahi_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a traditional Indian long-necked clay water pitcher surahi, red earthenware with carved lines, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 106
+ },
+ "assets/art/chars/src/swimmer_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a long eel-like creature made of grey river silt and wet clay, a round mouth ringed with clay teeth, segmented body, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 107
+ },
+ "assets/art/chars/src/terracotta_child_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a small terracotta votive figurine of a standing child, crude folk-art red fired clay, round eyes, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 116
+ },
+ "assets/art/chars/src/terracotta_hand_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a terracotta votive offering in the shape of a human hand, crude red fired clay, cracked, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 115
+ },
+ "assets/art/chars/src/terracotta_house_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a small terracotta votive model of a village house, red fired clay, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 116
+ },
+ "assets/art/chars/src/tesu.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "Tesu, a thin 12-year-old Indian village boy with dark brown skin, big dark eyes and messy black hair, wearing a faded orange kurta the colour of tesu flowers and a short white dhoti, a red thread tied on his wrist, barefoot, a small wooden pot-paddle strapped across his back, a slingshot tucked into his waistband, full body, side profile view facing right, standing straight, arms relaxed and slightly apart from the body, legs slightly apart, isolated on a plain flat pure white background, hand-painted 2D video game character art, painterly, highly detailed, soft warm lamplight from the left, cool rim light, no text",
+  "seed": 41
+ },
+ "assets/art/chars/src/tesu_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "Tesu, a thin 12-year-old Indian village boy with dark brown skin, big dark eyes and messy black hair, wearing a faded orange kurta the colour of tesu flowers and a short white dhoti, a red thread on his wrist, barefoot, nothing carried, empty hands, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 104
+ },
+ "assets/art/chars/src/thirsty_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a horror game creature: an emaciated human corpse of the drought whose skin is cracked grey-brown like a dried riverbed, sunken hollow eyes, open dry mouth, ragged loincloth, very thin limbs, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 107
+ },
+ "assets/art/chars/src/villager_f_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "an Indian village woman in a colourful faded red and mustard cotton sari with the end over her head, silver anklets, barefoot, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 110
+ },
+ "assets/art/chars/src/watchman_concept.png": {
+  "aspect": "2:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a burly Indian village night watchman, dark brown kurta, white dhoti, red turban, a thick stick tucked in his belt, a small clay oil lamp in one hand, sandals, full body character concept, front view, standing in a relaxed A-pose with the arms angled away from the body and the legs slightly apart, head to bare feet fully visible, isolated on a plain flat pure white background, stylized realistic 3D video game character, highly detailed clothing and skin textures, soft even studio lighting, no shadow, no text",
+  "seed": 108
+ },
+ "assets/art/chars/src/well_ring_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a single thick ancient terracotta well ring, a short wide cylinder of red fired clay with a thick rolled rim, weathered and chipped, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 109
+ },
+ "assets/art/chars/src/wheel_concept.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a large traditional Indian potter's wheel, a heavy flat stone disc on the ground with a lump of wet clay in the center, single object, three-quarter view, isolated on a plain flat pure white background, stylized realistic 3D video game asset, highly detailed textures, soft even studio lighting, no shadow, no text",
+  "seed": 105
+ },
+ "assets/art/dry_ghat/far_bank.png": {
+  "aspect": "21:9",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "prompt": "extremely wide panorama at night, the far bank of a dead dry river in rural India seen across a cracked riverbed, a long low silhouette of ancient brick ghat steps, small domed chhatri pavilions, cold dome kilns, mud houses, a few tiny warm lamp lights, enormous pale moon low in an indigo sky with dust haze, atmospheric perspective, misty, quiet and ominous, hand-painted 2D video game art, painterly brushwork, rich detail, dramatic chiaroscuro, muted indigo night and red-earth terracotta palette, rural India, potters' village, dark atmospheric side-scroller in the spirit of Inside, Hollow Knight and Ori, cinematic lighting, no text, no watermark",
+  "seed": 12
+ },
+ "assets/art/dry_ghat/far_bank2.png": {
+  "aspect": "21:9",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "prompt": "richly detailed oil painting, extremely wide panorama at night: across a vast dead cracked riverbed, the far bank of an ancient Indian river town, long flights of crumbling red-brick ghat steps, white domed chhatri pavilions, dome kilns, terraced mud houses with a few warm lamp-lit windows, silhouettes of motionless people holding tiny lamps on the steps, an enormous pale moon low in a deep indigo sky with luminous dust haze, atmospheric perspective, painterly, cinematic, melancholy, hand-painted 2D video game art, painterly brushwork, rich detail, dramatic chiaroscuro, muted indigo night and red-earth terracotta palette, rural India, potters' village, dark atmospheric side-scroller in the spirit of Inside, Hollow Knight and Ori, cinematic lighting, no text, no watermark",
+  "seed": 13
+ },
+ "assets/art/dry_ghat/sky.png": {
+  "aspect": "21:9",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "prompt": "extremely wide panoramic night sky over a flat dry Indian plain, enormous low pale moon on the right with a soft halo, thin dust haze bands glowing in the moonlight, faint stars, deep indigo zenith fading to dusty violet and ash rose at the horizon, the flat horizon line very low, almost no land, hand-painted 2D video game art, painterly brushwork, rich detail, dramatic chiaroscuro, muted indigo night and red-earth terracotta palette, rural India, potters' village, dark atmospheric side-scroller in the spirit of Inside, Hollow Knight and Ori, cinematic lighting, no text, no watermark",
+  "seed": 11
+ },
+ "assets/art/dry_ghat/src/baba.png": {
+  "aspect": "3:4",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a broad-shouldered Indian village potter in his forties, bare-chested with a white dhoti, clay-stained arms, standing with eyes shut and head bowed in grief, full body, side profile view facing right, standing straight, arms relaxed and slightly apart from the body, legs slightly apart, isolated on a plain flat pure white background, hand-painted 2D video game character art, painterly, highly detailed, soft warm lamplight from the left, cool rim light, no text",
+  "seed": 35
+ },
+ "assets/art/dry_ghat/src/boat.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a small shallow boat made of red terracotta clay, inside it lies a 12-year-old Indian girl in a dark red skirt and blouse, her eyes, ears, lips, nostrils and palms sealed with grey river clay, a single small clay oil lamp burning at her feet, side view, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 34
+ },
+ "assets/art/dry_ghat/src/chhatri.png": {
+  "aspect": "3:4",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "an old weathered red-brick and lime-plaster chhatri pavilion with a small white dome on four pillars, a clay oil lamp burning inside, cracked plaster, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 21
+ },
+ "assets/art/dry_ghat/src/crowd1.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a group of eight rural Indian villagers, men in white dhotis and turbans and women in colourful saris with veils, standing motionless in prayer with eyes shut and fingers pressed in their ears, lips pressed shut, some holding small burning clay oil lamps, eerie and silent, three-quarter view, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 31
+ },
+ "assets/art/dry_ghat/src/crowd2.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a group of six rural Indian village women and children in faded saris and odhnis standing very still in silent prayer, eyes closed, holding small burning clay diyas in cupped hands, faces lit warm from below, eerie, three-quarter view, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 32
+ },
+ "assets/art/dry_ghat/src/elders.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "five stern old Indian village elders in white kurtas, white dhotis and white turbans with white beards, kneeling in a half circle around a small clay boat, pressing wet river clay with their fingers, solemn, three-quarter view, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 33
+ },
+ "assets/art/dry_ghat/src/fg_pots.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a long low row of large dark clay water pots, stacked bricks, coiled ropes and a broken clay cart wheel, almost black silhouettes with a thin warm rim light, isolated on a plain flat pure white background, hand-painted 2D video game foreground asset, painterly",
+  "seed": 51
+ },
+ "assets/art/dry_ghat/src/house1.png": {
+  "aspect": "4:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a single-storey lime-washed mud house of a potters' village in rural India with a clay-tile roof, a low wooden-free doorway, beside the threshold a wall niche of five tiny clay doors each with a small brass bell, drying clay pots stacked against the wall, cracked whitewash revealing red earth, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 22
+ },
+ "assets/art/dry_ghat/src/house2.png": {
+  "aspect": "4:3",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "two joined flat-roofed mud and brick houses of a potters' village in rural India, lime-washed walls stained with red earth, a lit window glowing warm orange, rows of clay water pots drying on the parapet, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 23
+ },
+ "assets/art/dry_ghat/src/kiln.png": {
+  "aspect": "1:1",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a large cold traditional potter's dome kiln made of clay and brick, soot-blackened arched firing mouth, ash heap and broken shards at its base, thin smoke rising, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 24
+ },
+ "assets/art/dry_ghat/src/lamps.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a long row of dozens of small burning clay oil lamps diyas on old brick steps, warm flickering flames, isolated on a plain flat pure white background, hand-painted 2D video game asset, painterly",
+  "seed": 53
+ },
+ "assets/art/dry_ghat/src/mouth.png": {
+  "aspect": "16:9",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a gaping round sinkhole torn open in a cracked dry riverbed, jagged crumbling clay edges, a bottomless black abyss inside with a faint indigo glow far below, seen from the side and slightly above, isolated on a plain flat pure white background, hand-painted 2D video game asset, painterly, ominous",
+  "seed": 52
+ },
+ "assets/art/dry_ghat/src/pots.png": {
+  "aspect": "3:2",
+  "model": "black-forest-labs/flux-1.1-pro",
+  "prompt": "a stacked pyramid of unglazed terracotta matka water pots and surahi pitchers drying, red earthenware with white slip bands, some cracked, isolated on a plain flat pure white background, entire subject visible with margin, no ground, no cast shadow, hand-painted 2D video game asset, painterly brushwork, highly detailed, rich texture, lit by warm oil-lamp light from the lower left and cool indigo moonlight from the upper right, rim light, no text",
+  "seed": 25
+ }
+}

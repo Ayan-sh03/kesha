@@ -283,6 +283,9 @@ func start_region(i: int, mode: String = "enter") -> void:
 	_spawn_player()
 	player.visible = true
 	var pos: Vector3 = Game.checkpoint if Game.checkpoint != Vector3.INF else r.spawn
+	if _args.has("at") and mode == "enter":
+		var xy := String(_args["at"]).split(",")
+		pos = Vector3(float(xy[0]), float(xy[1]), 0)
 	player.respawn_at(pos)
 	player.facing = 1
 	rig.target = player
